@@ -37,7 +37,7 @@ handler = WebhookHandler(myC)
 ansA=[]
 city=''
 
-url = 'https://opendata.cwa.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=',os.getenv("YOUR_API"),'&format=JSON'
+url =os.getenv("YOUR_API")
   
 
 @app.route("/callback", methods=['POST'])
